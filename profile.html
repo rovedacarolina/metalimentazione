@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beyond Flavour | Profilo</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="logo" href="index.html">
+      <img src="assets/logo-beyondflavour.svg" alt="Beyond Flavour logo" />
+      <span>Beyond Flavour</span>
+    </a>
+    
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Esperienza</a>
+      <a href="valori.html">Manifesto</a>
+      <a href="format.html">Show</a>
+      <a href="profile.html">Profilo</a>
+      <a href="vote.html">Vota Ora</a>
+    </nav>
+
+    <button class="nav__toggle" aria-label="Apri menu" id="toggle">☰</button>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1>Il tuo profilo.</h1>
+    <p class="lead">
+      Qui trovi i punti accumulati con le votazioni live.
+      Ogni voto ti fa avanzare di livello.
+    </p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Punti totali</h3>
+        <p class="lead" id="totalPoints" style="font-weight:900;font-size:2rem;color:var(--teal);">0</p>
+        <p>Somma di tutte le votazioni.</p>
+      </div>
+
+      <div class="card">
+        <h3>Livello</h3>
+        <p class="lead" id="userLevel" style="font-weight:900;font-size:2rem;color:var(--blue);">Starter</p>
+        <p id="nextLevelText">Prossimo livello: —</p>
+      </div>
+
+      <div class="card">
+        <h3>Voti effettuati</h3>
+        <p class="lead" id="votesCount" style="font-weight:900;font-size:2rem;">0</p>
+        <p>Quante volte hai partecipato.</p>
+      </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="card" style="margin-top:14px;">
+      <h3>Progressione</h3>
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span id="progressLabel">Starter</span>
+          <span id="progressValue">0 / 30 pt</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-steps">
+          <span>Starter</span>
+          <span>Taster</span>
+          <span>Explorer</span>
+          <span>Visionary</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <h2>Storico votazioni</h2>
+    <p class="lead">Le tue scelte nelle diverse puntate.</p>
+
+    <div class="card">
+      <div id="votesList" style="display:grid; gap:10px;"></div>
+
+      <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn btn--secondary" id="resetBtn">Reset dati (demo)</button>
+        <a class="btn btn--primary" href="vote.html">Vai a votare</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div class="footer__brand">
+      <img class="footer-logo" src="assets/logo-beyondflavour.svg" alt="Beyond Flavour">
+      <strong>Beyond Flavour</strong>
+      <p>Meta-Alimentazione — Gruppo 8</p>
+    </div>
+
+    <div>
+      <strong>Canali</strong>
+      <p>YouTube • TikTok • Reels</p>
+    </div>
+
+    <div>
+      <strong>Contatti</strong>
+      <p>beyondflavour@uni.it</p>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <small>© 2025 Beyond Flavour</small>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

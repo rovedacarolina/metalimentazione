@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beyond Flavour | Esperienza</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="logo" href="index.html">
+      <img src="assets/logo-beyondflavour.svg" alt="Beyond Flavour logo" />
+      <span>Beyond Flavour</span>
+    </a>    
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Esperienza</a>
+      <a href="valori.html">Manifesto</a>
+      <a href="format.html">Show</a>
+      <a href="vote.html">Vota</a>
+      <a href="profile.html">Profilo</a>
+    </nav>
+
+    <button class="nav__toggle" aria-label="Apri menu" id="toggle">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <span class="kicker">Blind Taste Test • Food of Tomorrow</span>
+      <h1>Assaggia il futuro,<br/>senza etichette.</h1>
+      <p class="lead">
+        Beyond Flavour è un’esperienza che unisce cucina e innovazione:
+        due versioni dello stesso piatto, un assaggio alla cieca e
+        il voto del pubblico in tempo reale.
+      </p>
+
+      <div class="brand-sign">
+        <img src="assets/logo-beyondflavour.svg" alt="">
+        <p>Beyond Flavour Experience</p>
+      </div>
+      
+
+      <div class="cta">
+        <button class="btn btn--light" id="openSignup">Iscriviti</button>
+        <a class="btn btn--secondary" href="format.html#journey">Vivi il percorso</a>
+      </div>
+    </div>
+
+    <aside class="card card--float hero__card">
+      <span class="tag">Concept</span>
+      <h3>Prima si prova, poi si scopre.</h3>
+      <p>
+        Il Food Tech viene giudicato prima di essere compreso.
+        Noi invertiamo la logica: il gusto viene prima di tutto.
+      </p>
+
+      <div class="mini-grid">
+        <div class="mini">
+          <strong>15–20 min</strong>
+          <span>Episodio</span>
+        </div>
+        <div class="mini">
+          <strong>2 chef</strong>
+          <span>Stesso piatto</span>
+        </div>
+        <div class="mini">
+          <strong>100% blind</strong>
+          <span>Zero bias</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="section section--soft">
+  <div class="container">
+    <h2>Cosa rende unica l’esperienza</h2>
+    <p class="lead">Tre leve che trasformano curiosità in partecipazione.</p>
+
+    <div class="grid-3">
+      <article class="card">
+        <h3>Blind first</h3>
+        <p>Assaggio alla cieca per giudicare solo il sapore.</p>
+      </article>
+      <article class="card">
+        <h3>Voto live</h3>
+        <p>Giuria in studio e pubblico da casa decidono insieme.</p>
+      </article>
+      <article class="card">
+        <h3>Kit + UGC</h3>
+        <p>Box per casa con QR e challenge social collegata.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODAL ISCRIZIONE ================= -->
+<div class="modal" id="signupModal" aria-hidden="true">
+  <div class="modal__backdrop" id="closeSignup"></div>
+
+<div class="modal__panel card card--float">
+
+    <!-- background teal interno come figma -->
+    <div class="modal__shape"></div>
+  
+    <div class="modal__content">
+      <div class="modal__head">
+        <h2>Join the show</h2>
+        <button class="modal__x" id="closeSignupX" aria-label="Chiudi">✕</button>
+      </div>
+  
+      <p class="lead">Compila il form per entrare nella giuria Beyond Flavour.</p>
+
+
+    <form class="form form--figma" id="signupForm">
+
+      <h3 class="form__title">Join the show and challenge your senses!</h3>
+    
+      <!-- Riga 1 -->
+      <div class="form__row">
+        <label>First Name*
+          <input type="text" name="firstName" required placeholder="First Name">
+        </label>
+        <label>Last Name*
+          <input type="text" name="lastName" required placeholder="Last Name">
+        </label>
+      </div>
+    
+      <!-- Riga 2 -->
+      <div class="form__row">
+        <label>Date of birth*
+          <input type="date" name="birthDate" required>
+        </label>
+        <label>Place of birth*
+          <input type="text" name="birthPlace" required placeholder="Place of birth">
+        </label>
+      </div>
+    
+      <!-- Riga 3 -->
+      <div class="form__row">
+        <label>Nationality*
+          <select name="nationality" required>
+            <option value="" disabled selected>Nationality</option>
+            <option>Italian</option>
+            <option>European</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </div>
+    
+      <!-- Gender -->
+      <div class="form__block">
+        <span class="form__label">Gender*</span>
+        <div class="radio-row">
+          <label class="radio-pill">
+            <input type="radio" name="gender" value="male" required>
+            <span>Male</span>
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="gender" value="female">
+            <span>Female</span>
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="gender" value="other">
+            <span>Other</span>
+          </label>
+        </div>
+      </div>
+    
+      <!-- Address -->
+      <div class="form__row form__row--3">
+        <label>Address*
+          <input type="text" name="address" required placeholder="Address">
+        </label>
+        <label>City*
+          <input type="text" name="city" required placeholder="City">
+        </label>
+        <label>CAP*
+          <input type="text" name="cap" required placeholder="CAP">
+        </label>
+      </div>
+      
+    
+      <div class="form__row">
+        <label>Province*
+          <input type="text" name="province" required placeholder="Province">
+        </label>
+        <label>Country*
+          <select name="country" required>
+            <option value="" disabled selected>Country</option>
+            <option>Italy</option>
+            <option>Europe</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </div>
+    
+      <!-- Diet -->
+      <div class="form__block">
+        <span class="form__label">Diet*</span>
+        <div class="radio-row">
+          <label class="radio-pill">
+            <input type="radio" name="diet" value="omnivorous" required>
+            <span>Omnivorous</span>
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="diet" value="vegetarian">
+            <span>Vegetarian</span>
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="diet" value="vegan">
+            <span>Vegan</span>
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="diet" value="other">
+            <span>Other</span>
+          </label>
+        </div>
+      </div>
+    
+      <!-- Allergies -->
+      <label class="form__block">Allergies?
+        <input type="text" name="allergies" placeholder="Allergies">
+      </label>
+    
+      <!-- Phone + Email -->
+      <div class="form__row">
+        <label>Phone Number*
+          <input type="tel" name="phone" required placeholder="Phone Number">
+        </label>
+        <label>Email Address*
+          <input type="email" name="email" required placeholder="Email Address">
+        </label>
+      </div>
+    
+      <!-- Consensi -->
+      <label class="checkbox checkbox--figma">
+        <input type="checkbox" required>
+        <span>
+          L’assaggio di cibi nello show è a esclusivo rischio e pericolo degli spettatori.
+          La produzione e il personale declinano ogni responsabilità per allergie, malattie o problemi di salute derivanti dall’ingestione degli alimenti.
+          Si prega di considerare attentamente le proprie allergie e condizioni di salute prima di assaggiare.
+        </span>
+      </label>
+    
+      <label class="checkbox checkbox--figma">
+        <input type="checkbox" required>
+        <span>
+          Ho letto l’informativa sulla privacy e acconsento al trattamento dei miei dati personali.
+        </span>
+      </label>
+    
+      <button class="btn btn--primary form__submit" type="submit">
+        APPLY
+      </button>
+
+  </form>
+</div>  
+</div>    
+</div>    
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container footer__grid">
+
+  <div class="footer__brand">
+    <img class="footer-logo" src="assets/logo-beyondflavour.svg" alt="Beyond Flavour">
+    <strong>Beyond Flavour</strong>
+    <p>Meta-Alimentazione — Gruppo 8</p>
+  </div>
+
+  <div>
+    <strong>Canali</strong>
+    <p>YouTube • TikTok • Reels</p>
+  </div>
+
+  <div>
+    <strong>Contatti</strong>
+    <p>beyondflavour@uni.it</p>
+  </div>
+
+</div>
+
+<div class="container footer__bottom">
+  <small>© 2025 Beyond Flavour</small>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

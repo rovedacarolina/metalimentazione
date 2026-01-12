@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beyond Flavour | Vota Live</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="logo" href="index.html">
+      <img src="assets/logo-beyondflavour.svg" alt="Beyond Flavour logo" />
+      <span>Beyond Flavour</span>
+    </a>
+    
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Esperienza</a>
+      <a href="valori.html">Manifesto</a>
+      <a href="format.html">Show</a>
+      <a href="profile.html">Profilo</a>
+      <a href="vote.html">Vota Ora</a>
+    </nav>
+
+    <button class="nav__toggle" aria-label="Apri menu" id="toggle">☰</button>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="vote-header">
+      <div>
+        <span class="live-pill"><span class="live-dot"></span>LIVE VOTE</span>
+        <h1 style="margin-top:8px;">Puntata 1 — Carbonara 2050</h1>
+        <p class="lead">Assaggia con la mente libera: scegli solo in base al gusto.</p>
+      </div>
+      <div class="timer" id="timer">02:00</div>
+    </div>
+
+    <div class="vote-grid">
+      <!-- PIATTO A -->
+      <article class="vote-card">
+        <div class="vote-card__img">PIATTO A</div>
+        <div class="vote-card__label">Carbonara A</div>
+        <div class="vote-info">
+        </div>
+        <div class="vote-actions">
+          <button class="btn btn--primary"
+            data-vote
+            data-episode="Puntata 1 — Carbonara 2050"
+            data-choice="Piatto A"
+            data-points="10">
+            Vota A
+          </button>
+        </div>
+      </article>
+
+      <!-- PIATTO B -->
+      <article class="vote-card">
+        <div class="vote-card__img">PIATTO B</div>
+        <div class="vote-card__label">Carbonara B</div>
+        <div class="vote-info">
+        </div>
+        <div class="vote-actions">
+          <button class="btn btn--secondary"
+            data-vote
+            data-episode="Puntata 1 — Carbonara 2050"
+            data-choice="Piatto B"
+            data-points="10">
+            Vota B
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- CONFERMA -->
+    <div class="card vote-confirm" id="voteConfirm">
+      <h3>Voto registrato ✓</h3>
+      <p class="lead">
+        Hai guadagnato <b>+10 punti</b>.  
+        Vuoi vedere il tuo punteggio?
+      </p>
+      <div class="cta">
+        <a class="btn btn--primary" href="profile.html">Vai al profilo</a>
+        <a class="btn btn--secondary" href="format.html">Torna allo show</a>
+      </div>
+    </div>
+
+    <p id="alreadyVotedMsg" style="margin-top:12px; font-weight:800; color:var(--blue); display:none;">
+      Hai già votato per questa puntata.
+    </p>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div class="footer__brand">
+      <img class="footer-logo" src="assets/logo-beyondflavour.svg" alt="Beyond Flavour">
+      <strong>Beyond Flavour</strong>
+      <p>Meta-Alimentazione — Gruppo 8</p>
+    </div>
+
+    <div>
+      <strong>Canali</strong>
+      <p>YouTube • TikTok • Reels</p>
+    </div>
+
+    <div>
+      <strong>Contatti</strong>
+      <p>beyondflavour@uni.it</p>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <small>© 2025 Beyond Flavour</small>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

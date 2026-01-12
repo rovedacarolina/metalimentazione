@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beyond Flavour | Show</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="logo" href="index.html">
+      <img src="assets/logo-beyondflavour.svg" alt="Beyond Flavour logo" />
+      <span>Beyond Flavour</span>
+    </a>
+    
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Esperienza</a>
+      <a href="valori.html">Manifesto</a>
+      <a href="format.html">Show</a>
+      <a href="profile.html">Profilo</a>
+      <a href="vote.html">Vota Ora</a>
+    </nav>
+
+    <button class="nav__toggle" aria-label="Apri menu" id="toggle">☰</button>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1>Lo show.</h1>
+    <p class="lead">
+      Ogni episodio è una sfida binaria: due chef, stesso piatto,
+      ingredienti diversi. Il pubblico scopre la verità solo alla fine.
+    </p>
+
+    <div class="grid-3">
+      <article class="card">
+        <h3>Chef Tradizione</h3>
+        <p>Ricetta classica, ingredienti familiari, comfort food.</p>
+      </article>
+      <article class="card">
+        <h3>Chef Innovazione</h3>
+        <p>Stesso piatto, ingredienti Food Tech e nuova filiera.</p>
+      </article>
+      <article class="card">
+        <h3>Blind Taste Test</h3>
+        <p>Assaggio alla cieca + reveal finale del piatto futuristico.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="section section--alt">
+  <div class="container">
+    <h2>L’esperienza completa</h2>
+    <p class="lead">Il percorso Beyond Flavour, come nelle vostre mappe.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step__n">1</div>
+        <h3>Teaser</h3>
+        <p>Manifesti + contenuti social per generare curiosità.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">2</div>
+        <h3>QR → Landing</h3>
+        <p>Trailer e accesso rapido all’esperienza.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">3</div>
+        <h3>Candidatura</h3>
+        <p>Iscrizione come giuria live o digitale.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">4</div>
+        <h3>Show YouTube</h3>
+        <p>Visione live con divulgatore scientifico.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">5</div>
+        <h3>Blind test</h3>
+        <p>Assaggi guidati senza bias sugli ingredienti.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">6</div>
+        <h3>Voto digitale</h3>
+        <p>Scelta A/B in tempo reale da smartphone.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">7</div>
+        <h3>Kit a casa</h3>
+        <p>Box con assaggi, ricetta e QR per UGC.</p>
+      </div>
+      <div class="step">
+        <div class="step__n">8</div>
+        <h3>Reward</h3>
+        <p>Premio + ritorno nella community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Dove vive lo show</h2>
+    <div class="grid-2">
+      <article class="card">
+        <h3>YouTube</h3>
+        <p>Episodi principali + live e backstage.</p>
+      </article>
+      <article class="card">
+        <h3>TikTok / Reels</h3>
+        <p>Teaser, highlight, challenge e UGC.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Demo voto (prototipo)</h2>
+    <p class="lead">
+      Simula una votazione: ogni voto vale 10 punti.
+      Poi vai alla pagina Profilo per vedere i risultati.
+    </p>
+
+    <div class="card" style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn btn--primary"
+        data-vote
+        data-episode="Puntata 1"
+        data-choice="Piatto A"
+        data-points="10">
+        Vota Piatto A
+      </button>
+
+      <button class="btn btn--secondary"
+        data-vote
+        data-episode="Puntata 1"
+        data-choice="Piatto B"
+        data-points="10">
+        Vota Piatto B
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div class="footer__brand">
+      <img class="footer-logo" src="assets/logo-beyondflavour.svg" alt="Beyond Flavour">
+      <strong>Beyond Flavour</strong>
+      <p>Meta-Alimentazione — Gruppo 8</p>
+    </div>
+
+    <div>
+      <strong>Canali</strong>
+      <p>YouTube • TikTok • Reels</p>
+    </div>
+
+    <div>
+      <strong>Contatti</strong>
+      <p>beyondflavour@uni.it</p>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <small>© 2025 Beyond Flavour</small>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
