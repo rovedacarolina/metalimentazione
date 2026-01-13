@@ -268,3 +268,34 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+// ===== Mobile menu =====
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("toggle");
+  const menu = document.getElementById("menu");
+
+  if (toggle && menu) {
+    const openMenu = () => {
+      menu.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", menu.classList.contains("is-open"));
+    };
+
+    // click/tap
+    toggle.addEventListener("click", openMenu);
+    toggle.addEventListener("touchstart", (e) => {
+      // evita doppio trigger su iOS
+      e.preventDefault();
+      openMenu();
+    }, { passive: false });
+
+    // chiudi quando clicchi un link
+    menu.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => menu.classList.remove("is-open"));
+    });
+
+    // chiudi se ridimensioni (es. ruoti telefono)
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) menu.classList.remove("is-open");
+    });
+  }
+});
